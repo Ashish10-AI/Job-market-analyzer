@@ -1,0 +1,23 @@
+# =======================================================
+# Job Market Intelligence Platform - Setup Commands
+# =======================================================
+# Simply copy and paste these blocks into your terminal.
+
+# 1. Create a Python Virtual Environment
+python -m venv venv
+
+# 2. Activate the Virtual Environment
+# ---> FOR WINDOWS:
+venv\Scripts\activate
+
+# ---> FOR MAC / LINUX:
+source venv/bin/activate
+
+# 3. Install Core Dependencies
+pip install -r requirements.txt
+
+# 4. Fetch Initial Data (Runs the Scraper)
+python scraper.py
+
+# 5. Launch the Dashboard
+streamlit run app.py
